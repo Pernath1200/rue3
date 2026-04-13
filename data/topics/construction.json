@@ -1,0 +1,170 @@
+[
+  {
+    "id": "wall",
+    "word": "wall",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "The builder used bricks to make a ___ between the kitchen and the bedroom.",
+        "hint": "A vertical structure that divides or surrounds a room"
+      }
+    ]
+  },
+  {
+    "id": "roof",
+    "word": "roof",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "Rain and snow fall on the ___ at the top of the house.",
+        "hint": "The structure covering the top of a building"
+      }
+    ]
+  },
+  {
+    "id": "floor",
+    "word": "floor",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "We walk on the ___ inside the house — this one is made of wood.",
+        "hint": "The flat surface you stand on inside a building"
+      }
+    ]
+  },
+  {
+    "id": "window",
+    "word": "window",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "The ___ is made of glass and lets sunlight into the room.",
+        "hint": "An opening in a wall, covered with glass, that lets in light"
+      }
+    ]
+  },
+  {
+    "id": "brick",
+    "word": "brick",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "Each red ___ is rectangular and made from clay baked in an oven.",
+        "hint": "A small block of baked clay used for building walls"
+      }
+    ]
+  },
+  {
+    "id": "ladder",
+    "word": "ladder",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "He put the ___ against the wall and climbed up step by step to the roof.",
+        "hint": "A piece of equipment with steps, used for climbing up and down"
+      }
+    ]
+  },
+  {
+    "id": "drill",
+    "word": "drill",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "He used an electric ___ to make small round holes in the wall for the screws.",
+        "hint": "A tool that spins to make holes in hard materials"
+      }
+    ]
+  },
+  {
+    "id": "pipe",
+    "word": "pipe",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "Water travels through a metal ___ from the tank to the tap.",
+        "hint": "A long tube that carries water or gas"
+      }
+    ]
+  },
+  {
+    "id": "wire",
+    "word": "wire",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "The ___ is made of copper and carries electricity from the switch to the light.",
+        "hint": "A thin piece of metal that carries electrical current"
+      }
+    ]
+  },
+  {
+    "id": "cement",
+    "word": "cement",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "The builder mixed grey ___ powder with sand and water to hold the bricks together.",
+        "hint": "A powder that becomes hard when mixed with water, used to join bricks"
+      }
+    ]
+  },
+  {
+    "id": "hammer",
+    "word": "hammer",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "He held the ___ in one hand and hit the nail into the wood with it.",
+        "hint": "A heavy tool with a handle, used for hitting nails"
+      }
+    ]
+  },
+  {
+    "id": "nail",
+    "word": "nail",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "construction",
+    "sentences": [
+      {
+        "text": "The small metal ___ went into the wood when he hit it with the hammer.",
+        "hint": "A thin pointed piece of metal that you hit into wood to join things"
+      }
+    ]
+  }
+]

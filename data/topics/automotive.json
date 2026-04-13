@@ -1,0 +1,170 @@
+[
+  {
+    "id": "wheel",
+    "word": "wheel",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "A car has four ___s, and each one has a tyre on it.",
+        "hint": "The round part of a car that turns on the road"
+      }
+    ]
+  },
+  {
+    "id": "engine",
+    "word": "engine",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "The ___ makes the car go fast or slow.",
+        "hint": "The part of a car that uses fuel to produce power and movement"
+      }
+    ]
+  },
+  {
+    "id": "brake",
+    "word": "brake",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "Press the ___ to stop the car.",
+        "hint": "The part you press with your foot to make the car stop"
+      }
+    ]
+  },
+  {
+    "id": "mirror",
+    "word": "mirror",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "Check the ___ before you turn left or right.",
+        "hint": "A piece of glass that shows what is behind you"
+      }
+    ]
+  },
+  {
+    "id": "tyre",
+    "word": "tyre",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "The ___ is made of rubber and fits around the wheel.",
+        "hint": "The rubber covering around a wheel"
+      }
+    ]
+  },
+  {
+    "id": "seat",
+    "word": "seat",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "The driver's ___ is on the left side in England.",
+        "hint": "The place where you sit in a car"
+      }
+    ]
+  },
+  {
+    "id": "door",
+    "word": "door",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "Open the ___ and get into the car.",
+        "hint": "The part of a car that you open and close to get in or out"
+      }
+    ]
+  },
+  {
+    "id": "key",
+    "word": "key",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "I turn the ___ to start the car.",
+        "hint": "A small metal object used to lock, unlock, or start a car"
+      }
+    ]
+  },
+  {
+    "id": "light",
+    "word": "light",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "Turn on the ___ when you drive at night.",
+        "hint": "The bright part at the front and back of a car that helps you see and be seen"
+      }
+    ]
+  },
+  {
+    "id": "windscreen",
+    "word": "windscreen",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "The ___ is dirty — I can't see the road.",
+        "hint": "The large piece of glass at the front of a car"
+      }
+    ]
+  },
+  {
+    "id": "steering_wheel",
+    "word": "steering wheel",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "Hold the ___ with both hands when you drive.",
+        "hint": "The round object you turn with your hands to control the direction of a car"
+      }
+    ]
+  },
+  {
+    "id": "boot",
+    "word": "boot",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "A1",
+    "domain": "automotive",
+    "sentences": [
+      {
+        "text": "Put the bags in the ___ at the back of the car.",
+        "hint": "The covered space at the back of a car for storing things"
+      }
+    ]
+  }
+]
