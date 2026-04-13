@@ -1,0 +1,8 @@
+[
+  { "id": "technology", "name": "Technology", "file": "technology.json", "active": true },
+  { "id": "investing", "name": "Investing", "file": "investing.json", "active": false },
+  { "id": "automotive", "name": "Automotive", "file": "automotive.json", "active": false },
+  { "id": "construction", "name": "Construction", "file": "construction.json", "active": false },
+  { "id": "business", "name": "Business", "file": "business.json", "active": false },
+  { "id": "travel", "name": "Travel", "file": "travel.json", "active": false }
+]

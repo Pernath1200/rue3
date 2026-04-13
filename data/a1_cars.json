@@ -1,0 +1,242 @@
+[
+  {
+    "id": "car",
+    "word": "car",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "My dad has a red ___.",
+        "hint": "A vehicle with four wheels"
+      }
+    ]
+  },
+  {
+    "id": "drive",
+    "word": "drive",
+    "pos": "verb",
+    "type": "verb",
+    "sentences": [
+      {
+        "text": "I can ___ a car.",
+        "hint": "To control a car"
+      }
+    ]
+  },
+  {
+    "id": "driver",
+    "word": "driver",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "The ___ is my mother.",
+        "hint": "A person who drives a car"
+      }
+    ]
+  },
+  {
+    "id": "road",
+    "word": "road",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "The ___ is very long.",
+        "hint": "A way for cars to go"
+      }
+    ]
+  },
+  {
+    "id": "wheel",
+    "word": "wheel",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "The car has four ___.",
+        "hint": "A round part of a car"
+      }
+    ]
+  },
+  {
+    "id": "door",
+    "word": "door",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "Open the car ___.",
+        "hint": "You open it to get in a car"
+      }
+    ]
+  },
+  {
+    "id": "window",
+    "word": "window",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "Please close the ___.",
+        "hint": "The glass part you can open in a car"
+      }
+    ]
+  },
+  {
+    "id": "mirror",
+    "word": "mirror",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "Look in the ___ before you drive.",
+        "hint": "You use it to see behind you"
+      }
+    ]
+  },
+  {
+    "id": "seat",
+    "word": "seat",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "I sit in the front ___.",
+        "hint": "The place where you sit in a car"
+      }
+    ]
+  },
+  {
+    "id": "key",
+    "word": "key",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "I need my ___ to start the car.",
+        "hint": "You use it to start a car"
+      }
+    ]
+  },
+  {
+    "id": "petrol",
+    "word": "petrol",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "We need more ___ for the car.",
+        "hint": "Fuel for a car"
+      }
+    ]
+  },
+  {
+    "id": "park",
+    "word": "park",
+    "pos": "verb",
+    "type": "verb",
+    "sentences": [
+      {
+        "text": "I ___ the car near my house.",
+        "hint": "To leave a car in one place"
+      }
+    ]
+  },
+  {
+    "id": "fast",
+    "word": "fast",
+    "pos": "adjective",
+    "type": "adjective",
+    "sentences": [
+      {
+        "text": "This car is very ___.",
+        "hint": "Not slow"
+      }
+    ]
+  },
+  {
+    "id": "slow",
+    "word": "slow",
+    "pos": "adjective",
+    "type": "adjective",
+    "sentences": [
+      {
+        "text": "That bus is very ___.",
+        "hint": "Not fast"
+      }
+    ]
+  },
+  {
+    "id": "turn",
+    "word": "turn",
+    "pos": "verb",
+    "type": "verb",
+    "sentences": [
+      {
+        "text": "___ left at the next street.",
+        "hint": "To go in a different direction"
+      }
+    ]
+  },
+  {
+    "id": "stop",
+    "word": "stop",
+    "pos": "verb",
+    "type": "verb",
+    "sentences": [
+      {
+        "text": "Please ___ the car here.",
+        "hint": "To not move"
+      }
+    ]
+  },
+  {
+    "id": "light",
+    "word": "light",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "The car ___ is on.",
+        "hint": "It helps you see in the dark"
+      }
+    ]
+  },
+  {
+    "id": "boot",
+    "word": "boot",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "The bags are in the ___.",
+        "hint": "The back storage part of a car"
+      }
+    ]
+  },
+  {
+    "id": "engine",
+    "word": "engine",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "The ___ is very loud.",
+        "hint": "The part that makes the car move"
+      }
+    ]
+  },
+  {
+    "id": "seatbelt",
+    "word": "seatbelt",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "Put on your ___, please.",
+        "hint": "A safety belt in a car"
+      }
+    ]
+  }
+]

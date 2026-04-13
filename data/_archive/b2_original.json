@@ -1,0 +1,242 @@
+[
+  {
+    "id": "algorithm",
+    "word": "algorithm",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "The app uses a smart ___ to suggest personalised content to each user.",
+        "hint": "A set of rules or steps followed by a computer to solve a problem"
+      }
+    ]
+  },
+  {
+    "id": "blockchain",
+    "word": "blockchain",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "Companies are increasingly using ___ to record transactions securely and transparently.",
+        "hint": "A digital system for recording information in a way that is difficult to change"
+      }
+    ]
+  },
+  {
+    "id": "platform",
+    "word": "platform",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "We developed the app on a reliable cloud ___ that supports multiple devices.",
+        "hint": "A system or service that other software or services are built on"
+      }
+    ]
+  },
+  {
+    "id": "interface",
+    "word": "interface",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "The new ___ is intuitive and much easier for users to navigate.",
+        "hint": "The way a program looks and is arranged on screen for the user"
+      }
+    ]
+  },
+  {
+    "id": "scalability",
+    "word": "scalability",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "___ was a major concern when the number of users grew rapidly.",
+        "hint": "The ability of a system to handle growing amounts of work"
+      }
+    ]
+  },
+  {
+    "id": "investment",
+    "word": "investment",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "The startup secured a significant ___ from a venture capital fund.",
+        "hint": "Money put into a business or project with the expectation of profit"
+      }
+    ]
+  },
+  {
+    "id": "investor",
+    "word": "investor",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "An experienced ___ carefully reviewed the business plan before committing funds.",
+        "hint": "A person who puts money into a business hoping to make a profit"
+      }
+    ]
+  },
+  {
+    "id": "prototype",
+    "word": "prototype",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "The team created a working ___ to demonstrate the core features of the app.",
+        "hint": "An early model of a product, built to test the concept"
+      }
+    ]
+  },
+  {
+    "id": "startup",
+    "word": "startup",
+    "pos": "noun",
+    "type": "concrete",
+    "sentences": [
+      {
+        "text": "The ___ aims to disrupt the traditional banking sector with its innovative solution.",
+        "hint": "A newly established business, especially in technology"
+      }
+    ]
+  },
+  {
+    "id": "revenue",
+    "word": "revenue",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "The company's ___ mainly comes from premium subscriptions and advertising.",
+        "hint": "The total income a business earns from its activities"
+      }
+    ]
+  },
+  {
+    "id": "database",
+    "word": "database",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "All user data is stored safely in a secure ___.",
+        "hint": "An organised collection of data stored electronically"
+      }
+    ]
+  },
+  {
+    "id": "encryption",
+    "word": "encryption",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "Strong ___ is necessary to protect sensitive financial information.",
+        "hint": "The process of converting information into a secret code"
+      }
+    ]
+  },
+  {
+    "id": "cybersecurity",
+    "word": "cybersecurity",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "___ has become a top priority for every fintech company.",
+        "hint": "The practice of protecting computer systems from digital attacks"
+      }
+    ]
+  },
+  {
+    "id": "fintech",
+    "word": "fintech",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "___ is transforming the way people manage and invest their money.",
+        "hint": "Technology used to support or improve banking and financial services"
+      }
+    ]
+  },
+  {
+    "id": "portfolio",
+    "word": "portfolio",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "He maintains a diversified ___ that includes stocks, bonds, and startup equity.",
+        "hint": "A collection of financial investments held by a person or company"
+      }
+    ]
+  },
+  {
+    "id": "venture",
+    "word": "venture",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "The ___ proved successful after the app gained millions of active users.",
+        "hint": "A risky business project or activity undertaken for profit"
+      }
+    ]
+  },
+  {
+    "id": "user_experience",
+    "word": "user experience",
+    "pos": "noun",
+    "type": "phrase",
+    "sentences": [
+      {
+        "text": "A positive ___ is essential for retaining customers in competitive markets.",
+        "hint": "How a person feels when using a product, system, or service"
+      }
+    ]
+  },
+  {
+    "id": "analytics",
+    "word": "analytics",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "The team regularly reviews ___ to understand user behaviour and improve the product.",
+        "hint": "The systematic analysis of data to find useful patterns"
+      }
+    ]
+  },
+  {
+    "id": "infrastructure",
+    "word": "infrastructure",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "The company invested heavily in modern ___ to handle high traffic.",
+        "hint": "The basic systems and equipment needed for something to operate"
+      }
+    ]
+  },
+  {
+    "id": "onboarding",
+    "word": "onboarding",
+    "pos": "noun",
+    "type": "abstract",
+    "sentences": [
+      {
+        "text": "A smooth ___ process helps new users quickly understand how the app works.",
+        "hint": "The process of integrating a new user or employee into a system"
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "algorithm",
+    "word": "algorithm",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "The social media ___ decides which posts appear at the top of your feed.",
+        "hint": "A set of rules or steps followed by a computer to solve a problem"
+      }
+    ]
+  },
+  {
+    "id": "platform",
+    "word": "platform",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "Unlike a simple website, a ___ allows other companies to build their own products and services on it.",
+        "hint": "A system or service that other software or services are built on"
+      }
+    ]
+  },
+  {
+    "id": "interface",
+    "word": "interface",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "Users complained that the new ___ had too many buttons and menus.",
+        "hint": "The way a program looks and is arranged on screen for the user"
+      }
+    ]
+  },
+  {
+    "id": "scalability",
+    "word": "scalability",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "The CTO warned that ___ would become a serious problem if they reached a million users without upgrading their servers.",
+        "hint": "The ability of a system to handle growing amounts of work"
+      }
+    ]
+  },
+  {
+    "id": "database",
+    "word": "database",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "Every time a user creates an account, their details are stored in a secure ___.",
+        "hint": "An organized collection of data stored electronically"
+      }
+    ]
+  }
+]

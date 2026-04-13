@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RUE3 Vocabulary Trainer — gap-fill practice for Czech learners of English" />
+  <title>Vocabulary Trainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <!-- Home -->
+    <section id="view-home" class="view view--active" aria-label="Home">
+      <div class="card card--main">
+        <button type="button" class="btn btn--large" data-nav="core">Core Vocabulary</button>
+        <div class="divider" role="presentation"></div>
+        <button type="button" class="btn btn--large" data-nav="topic">Topic Vocabulary</button>
+        <button type="button" class="btn btn--large btn--star" data-nav="my-words" id="btn-home-my-words" hidden>My Words ★</button>
+      </div>
+    </section>
+
+    <!-- Topic menu -->
+    <section id="view-topic" class="view" hidden aria-label="Topic vocabulary">
+      <div class="card card--main">
+        <p class="setup-label">Choose topic</p>
+        <div id="topic-list" class="topic-list"></div>
+        <div class="divider" role="presentation"></div>
+        <button type="button" class="btn btn--large btn--ghost" data-nav="home">Back to Menu</button>
+      </div>
+    </section>
+
+    <!-- Core: level select -->
+    <section id="view-levels" class="view" hidden aria-label="Choose level">
+      <div class="card card--main">
+        <button type="button" class="btn btn--large" data-level="A1">A1</button>
+        <button type="button" class="btn btn--large" data-level="A2">A2</button>
+        <button type="button" class="btn btn--large" data-level="B1">B1</button>
+        <button type="button" class="btn btn--large" data-level="B2">B2</button>
+        <div class="divider" role="presentation"></div>
+        <button type="button" class="btn btn--large btn--ghost" data-nav="home">Back</button>
+      </div>
+    </section>
+
+    <!-- Session length -->
+    <section id="view-session-setup" class="view" hidden aria-label="Session length">
+      <div class="card card--main">
+        <p class="setup-label" id="setup-title">How many words?</p>
+        <button type="button" class="btn btn--large" data-length="10">10 words</button>
+        <button type="button" class="btn btn--large" data-length="20">20 words</button>
+        <button type="button" class="btn btn--large" data-length="all">All</button>
+        <div class="divider" role="presentation"></div>
+        <button type="button" class="btn btn--large btn--ghost" data-back="levels">Back</button>
+      </div>
+    </section>
+
+    <!-- Caught up -->
+    <section id="view-caught-up" class="view" hidden aria-label="All caught up">
+      <div class="card card--main">
+        <p class="message-text" id="caught-up-msg">All caught up! Come back later.</p>
+        <button type="button" class="btn btn--large" id="btn-practice-anyway">Practice anyway</button>
+        <div class="divider" role="presentation"></div>
+        <button type="button" class="btn btn--large btn--ghost" data-back="session-setup">Back</button>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="view-quiz" class="view" hidden aria-label="Quiz">
+      <div class="card card--quiz" id="quiz-card">
+        <div class="quiz-progress" id="quiz-progress" aria-live="polite">1 / 20</div>
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-bar">
+          <div class="progress-bar__fill" id="progress-bar-fill"></div>
+        </div>
+        <p class="sentence" id="quiz-sentence"></p>
+        <div class="letter-slots-wrap" id="letter-slots-wrap">
+          <p class="letter-slots" id="letter-slots"></p>
+        </div>
+        <label class="sr-only" for="quiz-input">Your answer</label>
+        <input type="text" class="input-answer" id="quiz-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+        <div class="hint-row">
+          <button type="button" class="btn btn--hint btn--hint-small" id="btn-first-letter">First letter</button>
+          <button type="button" class="btn btn--hint btn--hint-small" id="btn-hint" aria-expanded="false">Hint</button>
+        </div>
+        <p class="hint-text" id="hint-text" hidden></p>
+        <div class="feedback" id="quiz-feedback" aria-live="polite"></div>
+        <div class="quiz-actions">
+          <button type="button" class="btn btn--large" id="btn-submit">Submit</button>
+          <button type="button" class="btn btn--large" id="btn-next" hidden>Next</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review -->
+    <section id="view-review" class="view" hidden aria-label="Session review">
+      <div class="card card--main card--wide">
+        <p class="end-score" id="review-score"></p>
+        <p class="review-message" id="review-message"></p>
+        <div class="review-list-wrap">
+          <ul class="review-list" id="review-list"></ul>
+        </div>
+        <button type="button" class="btn btn--large" id="btn-practice-again">Practise Again</button>
+        <button type="button" class="btn btn--large btn--ghost" data-nav="home">Back to menu</button>
+      </div>
+    </section>
+
+    <!-- My Words -->
+    <section id="view-my-words" class="view" hidden aria-label="My bookmarked words">
+      <div class="card card--main card--wide">
+        <p class="end-score">My Words</p>
+        <button type="button" class="btn btn--large btn--star" id="btn-practise-my-words">Practise My Words</button>
+        <p class="my-words-count" id="my-words-count">0 words saved</p>
+        <p class="my-words-min-note" id="my-words-min-note" hidden>Save at least 3 words to start practising</p>
+        <p class="message-text" id="my-words-empty" hidden>
+          No saved words yet. After a quiz session, tap the star on any word you want to remember.
+        </p>
+        <div class="review-list-wrap">
+          <ul class="review-list" id="my-words-list"></ul>
+        </div>
+        <button type="button" class="btn btn--large btn--ghost" data-nav="home">Back to menu</button>
+      </div>
+    </section>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
