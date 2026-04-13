@@ -15,10 +15,56 @@
     <!-- Home -->
     <section id="view-home" class="view view--active" aria-label="Home">
       <div class="card card--main">
-        <button type="button" class="btn btn--large" data-nav="core">Core Vocabulary</button>
+        <button type="button" class="btn btn--large btn--cta btn--placement-home" data-nav="placement">Start Here: Vocabulary Test</button>
         <div class="divider" role="presentation"></div>
+        <button type="button" class="btn btn--large" data-nav="core">Core Vocabulary</button>
         <button type="button" class="btn btn--large" data-nav="topic">Topic Vocabulary</button>
         <button type="button" class="btn btn--large btn--star" data-nav="my-words" id="btn-home-my-words" hidden>My Words ★</button>
+      </div>
+    </section>
+
+    <!-- Placement test: instructions -->
+    <section id="view-placement-intro" class="view" hidden aria-label="Vocabulary placement test">
+      <div class="card card--main">
+        <h2 class="placement-heading">How big is your vocabulary?</h2>
+        <p class="placement-copy">Tap every word you know. Be honest — this helps the app focus on what you need to learn.</p>
+        <p class="placement-copy placement-copy--muted">It takes about 60 seconds.</p>
+        <button type="button" class="btn btn--large btn--cta" id="btn-placement-start">Start</button>
+        <button type="button" class="btn btn--large btn--ghost" data-nav="home">Back to Menu</button>
+      </div>
+    </section>
+
+    <!-- Placement test: word grids -->
+    <section id="view-placement-words" class="view" hidden aria-label="Placement word selection">
+      <div class="card card--main card--placement-words">
+        <div class="placement-panels">
+          <div class="placement-panel placement-panel--active" id="placement-panel-1" aria-hidden="false">
+            <div class="placement-grid" id="placement-grid-1" role="group" aria-label="Words page 1"></div>
+          </div>
+          <div class="placement-panel" id="placement-panel-2" aria-hidden="true">
+            <div class="placement-grid" id="placement-grid-2" role="group" aria-label="Words page 2"></div>
+          </div>
+        </div>
+        <p class="placement-page-label" id="placement-page-label">Page 1 of 2</p>
+        <div class="placement-actions" id="placement-actions-p1">
+          <button type="button" class="btn btn--large" id="btn-placement-next">Next</button>
+        </div>
+        <div class="placement-actions placement-actions--p2" id="placement-actions-p2" hidden>
+          <button type="button" class="btn btn--small-secondary" id="btn-placement-back-p2">Back</button>
+          <button type="button" class="btn btn--large btn--cta" id="btn-placement-see-result">See my result</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Placement test: result -->
+    <section id="view-placement-result" class="view" hidden aria-label="Placement result">
+      <div class="card card--main card--wide card--placement-result">
+        <p class="placement-result-line" id="placement-result-line"></p>
+        <p class="placement-result-explainer" id="placement-result-explainer"></p>
+        <p class="placement-result-rec" id="placement-result-rec"></p>
+        <button type="button" class="btn btn--large btn--cta" id="btn-placement-go-core">Go to Core Vocabulary</button>
+        <button type="button" class="btn btn--large" id="btn-placement-go-topics">Go to Topics</button>
+        <button type="button" class="btn btn--large btn--ghost" data-nav="home">Back to Menu</button>
       </div>
     </section>
 

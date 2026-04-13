@@ -5,6 +5,7 @@
 const SRS_KEY = "rue3_srs";
 const SESSION_IDX_KEY = "rue3_session_index";
 const BOOKMARKS_KEY = "rue3_bookmarks";
+const PLACEMENT_KEY = "rue3_placement_level";
 
 const BOX_INTERVALS = [1, 2, 4, 8, 16];
 
@@ -29,6 +30,8 @@ let allWordsIndex = {};
 let sessionSource = "core";
 let lastSessionSource = "core";
 let topicRegistry = [];
+let placementLexicon = null;
+let placementState = null;
 
 const LEVEL_DATA_FILES = {
   A1: "../data/a1_cars.json",
@@ -38,6 +41,9 @@ const TOPIC_INDEX_FILE = "../data/topics/index.json";
 
 const views = {
   home: "view-home",
+  placementIntro: "view-placement-intro",
+  placementWords: "view-placement-words",
+  placementResult: "view-placement-result",
   topic: "view-topic",
   levels: "view-levels",
   sessionSetup: "view-session-setup",
@@ -45,6 +51,13 @@ const views = {
   quiz: "view-quiz",
   review: "view-review",
   myWords: "view-my-words",
+};
+
+const PLACEMENT_EXPLAINERS = {
+  A1: "You're at the beginning — start with simple, everyday words.",
+  A2: "You know the basics. Time to build on that foundation.",
+  B1: "You have a good working vocabulary. Let's fill in the gaps.",
+  B2: "You have a strong vocabulary. Let's refine and expand it.",
 };
 
 function normalizeWord(raw) {
@@ -752,6 +765,101 @@ async function loadAllWordsIndex() {
   allWordsIndex = merged;
 }
 
+async function loadPlacementData() {
+  if (placementLexicon) return;
+  const res = await fetch(new URL("../data/placement.json", import.meta.url));
+  const data = await res.json();
+  placementLexicon = data.placement_words;
+}
+
+async function openPlacementIntro() {
+  try {
+    await loadPlacementData();
+    showView("placementIntro");
+  } catch (e) {
+    console.error(e);
+    showToast("Could not load placement test.");
+  }
+}
+
+function renderPlacementGrid(gridId, items) {
+  const el = document.getElementById(gridId);
+  if (!el || !placementState) return;
+  el.innerHTML = items
+    .map((item) => {
+      const w = item.word;
+      const sel = placementState.known.has(w);
+      const esc = escapeHtml(w);
+      return `<button type="button" class="placement-chip${sel ? " placement-chip--selected" : ""}" data-placement-word="${esc}" aria-pressed="${sel}">${esc}</button>`;
+    })
+    .join("");
+}
+
+function showPlacementPage(page) {
+  const p1 = document.getElementById("placement-panel-1");
+  const p2 = document.getElementById("placement-panel-2");
+  const label = document.getElementById("placement-page-label");
+  const a1 = document.getElementById("placement-actions-p1");
+  const a2 = document.getElementById("placement-actions-p2");
+  if (!p1 || !p2 || !label || !a1 || !a2) return;
+  label.textContent = `Page ${page} of 2`;
+  if (page === 1) {
+    p1.classList.add("placement-panel--active");
+    p2.classList.remove("placement-panel--active");
+    p1.setAttribute("aria-hidden", "false");
+    p2.setAttribute("aria-hidden", "true");
+    a1.hidden = false;
+    a2.hidden = true;
+  } else {
+    p1.classList.remove("placement-panel--active");
+    p2.classList.add("placement-panel--active");
+    p1.setAttribute("aria-hidden", "true");
+    p2.setAttribute("aria-hidden", "false");
+    a1.hidden = true;
+    a2.hidden = false;
+  }
+}
+
+function computePlacementLevel(knownSet, lexicon) {
+  const counts = { A1: 0, A2: 0, B1: 0, B2: 0 };
+  for (const item of lexicon) {
+    if (knownSet.has(item.word)) counts[item.level] += 1;
+  }
+  if (counts.B2 >= 8) return "B2";
+  if (counts.B1 >= 8) return "B1";
+  if (counts.A2 >= 8) return "A2";
+  return "A1";
+}
+
+async function beginPlacementTest() {
+  try {
+    await loadPlacementData();
+  } catch (e) {
+    console.error(e);
+    showToast("Could not load placement test.");
+    return;
+  }
+  const order = shuffle([...placementLexicon]);
+  placementState = { order, known: new Set() };
+  renderPlacementGrid("placement-grid-1", order.slice(0, 24));
+  renderPlacementGrid("placement-grid-2", order.slice(24, 48));
+  showPlacementPage(1);
+  showView("placementWords");
+}
+
+function finishPlacementTest() {
+  if (!placementState || !placementLexicon) return;
+  const level = computePlacementLevel(placementState.known, placementLexicon);
+  localStorage.setItem(PLACEMENT_KEY, level);
+  document.getElementById("placement-result-line").innerHTML =
+    `Your vocabulary level is approximately <strong>${escapeHtml(level)}</strong>`;
+  document.getElementById("placement-result-explainer").textContent =
+    PLACEMENT_EXPLAINERS[level];
+  document.getElementById("placement-result-rec").innerHTML =
+    `We recommend starting with <strong>${escapeHtml(level)} Core Vocabulary</strong>`;
+  showView("placementResult");
+}
+
 async function init() {
   await loadTopicRegistry();
   renderTopicMenu();
@@ -771,6 +879,10 @@ async function init() {
       if (target === "topic") {
         renderTopicMenu();
         showView("topic");
+      }
+      if (target === "placement") {
+        openPlacementIntro();
+        return;
       }
       if (target === "my-words") {
         sessionSource = "myWords";
@@ -943,6 +1055,48 @@ async function init() {
     resetSessionResults();
     document.getElementById("setup-title").textContent = "How many saved words?";
     showView("sessionSetup");
+  });
+
+  document.getElementById("btn-placement-start").addEventListener("click", () => {
+    beginPlacementTest();
+  });
+
+  document.getElementById("btn-placement-next").addEventListener("click", () => {
+    showPlacementPage(2);
+  });
+
+  document.getElementById("btn-placement-back-p2").addEventListener("click", () => {
+    showPlacementPage(1);
+  });
+
+  document.getElementById("btn-placement-see-result").addEventListener("click", () => {
+    finishPlacementTest();
+  });
+
+  document.getElementById("btn-placement-go-core").addEventListener("click", () => {
+    sessionSource = "core";
+    showView("levels");
+  });
+
+  document.getElementById("btn-placement-go-topics").addEventListener("click", () => {
+    renderTopicMenu();
+    showView("topic");
+  });
+
+  document.getElementById("view-placement-words").addEventListener("click", (e) => {
+    const chip = e.target.closest("[data-placement-word]");
+    if (!chip || !placementState) return;
+    const w = chip.getAttribute("data-placement-word");
+    if (!w) return;
+    if (placementState.known.has(w)) {
+      placementState.known.delete(w);
+      chip.classList.remove("placement-chip--selected");
+      chip.setAttribute("aria-pressed", "false");
+    } else {
+      placementState.known.add(w);
+      chip.classList.add("placement-chip--selected");
+      chip.setAttribute("aria-pressed", "true");
+    }
   });
 
   showView("home");

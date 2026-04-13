@@ -1,0 +1,282 @@
+[
+  {
+    "id": "investor",
+    "word": "investor",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The angel ___ offered €500,000 of his own personal money in exchange for a share of the company.",
+        "hint": "A person who puts money into a business hoping to make a profit"
+      }
+    ]
+  },
+  {
+    "id": "investment",
+    "word": "investment",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The startup secured a seed ___ of €2 million, which would fund the first eighteen months of development.",
+        "hint": "Money put into a business or project with the expectation of profit"
+      }
+    ]
+  },
+  {
+    "id": "revenue",
+    "word": "revenue",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The company generates most of its ___ from monthly subscription fees paid by users.",
+        "hint": "The total income a business earns from its activities"
+      }
+    ]
+  },
+  {
+    "id": "portfolio",
+    "word": "portfolio",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The venture capital firm manages a ___ of twenty-three companies, mostly in fintech and healthcare.",
+        "hint": "A collection of financial investments held by a person or company"
+      }
+    ]
+  },
+  {
+    "id": "venture",
+    "word": "venture",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The business ___ was risky, but the potential rewards were enormous if the product succeeded.",
+        "hint": "A risky business project or activity undertaken for profit"
+      }
+    ]
+  },
+  {
+    "id": "startup",
+    "word": "startup",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The ___ was founded in a garage just two years ago but now employs over a hundred people.",
+        "hint": "A newly established business, especially in technology"
+      }
+    ]
+  },
+  {
+    "id": "prototype",
+    "word": "prototype",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "Before raising any money, the founders built a working ___ to show what the product could do.",
+        "hint": "An early model of a product, built to test the concept"
+      }
+    ]
+  },
+  {
+    "id": "equity",
+    "word": "equity",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The founders sold 20% of their ___ — their ownership share in the company — during the first funding round.",
+        "hint": "The value of ownership in a company, represented as shares"
+      }
+    ]
+  },
+  {
+    "id": "valuation",
+    "word": "valuation",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "After the latest funding round, the company's ___ reached €50 million.",
+        "hint": "An estimate of how much a company is worth"
+      }
+    ]
+  },
+  {
+    "id": "pitch",
+    "word": "pitch",
+    "pos": "verb",
+    "type": "verb",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The founder had just five minutes to ___ his idea to a room full of investors.",
+        "hint": "To present a business idea in order to persuade someone to invest"
+      }
+    ]
+  },
+  {
+    "id": "stake",
+    "word": "stake",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The venture capital firm acquired a 30% ___ in the company, giving them significant influence over major decisions.",
+        "hint": "A share or financial interest in a business"
+      }
+    ]
+  },
+  {
+    "id": "due_diligence",
+    "word": "due diligence",
+    "pos": "noun",
+    "type": "phrase",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "Before signing the deal, the investors spent six weeks conducting ___, examining every financial record and contract.",
+        "hint": "A thorough investigation of a business before making an investment"
+      }
+    ]
+  },
+  {
+    "id": "return",
+    "word": "return",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The fund delivered a 300% ___ on the original investment within just four years.",
+        "hint": "The profit earned from an investment"
+      }
+    ]
+  },
+  {
+    "id": "fundraising",
+    "word": "fundraising",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The CEO spent three months on a ___ round, meeting over forty potential investors before closing the deal.",
+        "hint": "The process of seeking financial support for a business or project"
+      }
+    ]
+  },
+  {
+    "id": "burn_rate",
+    "word": "burn rate",
+    "pos": "noun",
+    "type": "phrase",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "With a monthly ___ of €80,000 and only €400,000 in the bank, the startup had just five months of runway left.",
+        "hint": "The speed at which a company spends its available money"
+      }
+    ]
+  },
+  {
+    "id": "runway",
+    "word": "runway",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "After the latest investment, the company had enough ___ to operate for at least eighteen months without new funding.",
+        "hint": "The amount of time a company can keep operating before it runs out of money"
+      }
+    ]
+  },
+  {
+    "id": "scalable",
+    "word": "scalable",
+    "pos": "adjective",
+    "type": "adjective",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "Investors want to see a ___ business model — one that can grow rapidly without costs increasing at the same rate.",
+        "hint": "Able to grow or expand easily to handle increased demand"
+      }
+    ]
+  },
+  {
+    "id": "traction",
+    "word": "traction",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The app gained serious ___ after launch, reaching 50,000 active users in its first three months.",
+        "hint": "Evidence that a product is gaining popularity and momentum in the market"
+      }
+    ]
+  },
+  {
+    "id": "exit",
+    "word": "exit",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The investors' preferred ___ strategy was to sell the company to a larger tech firm within five years.",
+        "hint": "The way an investor gets their money back, usually by selling the company or going public"
+      }
+    ]
+  },
+  {
+    "id": "round",
+    "word": "round",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "investing",
+    "sentences": [
+      {
+        "text": "The company closed its Series A ___, raising €5 million from three different venture capital firms.",
+        "hint": "A stage of funding in which a company raises money from investors"
+      }
+    ]
+  }
+]

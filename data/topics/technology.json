@@ -68,5 +68,117 @@
         "hint": "An organized collection of data stored electronically"
       }
     ]
+  },
+  {
+    "id": "encryption",
+    "word": "encryption",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "WhatsApp uses end-to-end ___ so that only the sender and receiver can read messages.",
+        "hint": "The process of converting information into a secret code to prevent unauthorized access"
+      }
+    ]
+  },
+  {
+    "id": "analytics",
+    "word": "analytics",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "Google ___ showed that most visitors left the page after less than ten seconds.",
+        "hint": "The systematic analysis of data to find useful patterns"
+      }
+    ]
+  },
+  {
+    "id": "infrastructure",
+    "word": "infrastructure",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "Amazon Web Services provides the cloud ___ that thousands of startups depend on.",
+        "hint": "The basic systems and equipment needed for something to operate"
+      }
+    ]
+  },
+  {
+    "id": "onboarding",
+    "word": "onboarding",
+    "pos": "noun",
+    "type": "abstract",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "A good ___ flow should teach new users how the app works within the first sixty seconds.",
+        "hint": "The process of integrating a new user into a system or product"
+      }
+    ]
+  },
+  {
+    "id": "user_experience",
+    "word": "user experience",
+    "pos": "noun",
+    "type": "phrase",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "A frustrating ___ is the number one reason people uninstall apps within the first week.",
+        "hint": "How a person feels when using a product, system, or service"
+      }
+    ]
+  },
+  {
+    "id": "iterate",
+    "word": "iterate",
+    "pos": "verb",
+    "type": "verb",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "The best startups ___ quickly, releasing new versions of their product every two weeks.",
+        "hint": "To repeat a process, making improvements each time"
+      }
+    ]
+  },
+  {
+    "id": "monetise",
+    "word": "monetise",
+    "pos": "verb",
+    "type": "verb",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "YouTube didn't ___ creators' videos until it introduced advertising and the Partner Programme.",
+        "hint": "To earn money from something, especially a product or service"
+      }
+    ]
+  },
+  {
+    "id": "bug",
+    "word": "bug",
+    "pos": "noun",
+    "type": "concrete",
+    "level": "B2",
+    "domain": "technology",
+    "sentences": [
+      {
+        "text": "The QA team found a ___ that made the app crash every time a user uploaded a photo.",
+        "hint": "An error or flaw in a computer program that causes it to behave unexpectedly"
+      }
+    ]
   }
 ]
